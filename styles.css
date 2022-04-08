@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh; 
+  width: 100vw;
+}
+
+.bg-container {
+  background: url(assets/background.jpg) no-repeat; 
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-countdown {
+  background: rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: #f3f3f3;
+  font-size: 36px;
+  /* font-family: 'Inconsolata', monospace; */
+  font-family: 'Indie Flower', cursive;
+  letter-spacing: 6px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title p {
+  display: block;
+  margin-top: 20px;
+  color: #f3f3f3; 
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+}
+
+.countdown {
+  font-family: 'Rajdhani', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.countdown .countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f3f3f3; 
+}
+
+.countdown .countdown-item:not(:last-child) {
+  border-right: 1px solid white;
+  padding-right: 30px;
+}
+
+.countdown .countdown-item .countdown-item-number {
+  font-size: 96px;
+  letter-spacing: 5px;
+}
+
+.countdown .countdown-item .countdown-item-describe {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+
+.card-image img {
+  margin-top: 20px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  .card-countdown {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+  }
+
+  .countdown {
+    column-gap: 16px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .countdown .countdown-item:not(:last-child) {
+    padding-right: 16px;
+  }
+
+  .countdown .countdown-item .countdown-item-number {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  
+  .countdown .countdown-item .countdown-item-describe {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .card-countdown {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+  }
+
+  .countdown {
+    column-gap: 14px;
+    width: 100%;
+    padding: 0px;
+    
+  }
+
+  .countdown .countdown-item:not(:last-child) {
+    padding-right: 14px;
+  }
+
+  .countdown .countdown-item .countdown-item-number {
+    font-size: 48px;
+    letter-spacing: 3px;
+  }
+  
+  .countdown .countdown-item .countdown-item-describe {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .countdown {
+    column-gap: 10px;
+  }
+
+  .countdown .countdown-item:not(:last-child) {
+    padding-right: 10px;
+  }
+
+  .countdown .countdown-item .countdown-item-number {
+    font-size: 30px;
+  }
+  
+  .countdown .countdown-item .countdown-item-describe {
+    font-size: 11px;
+  }
+}
