@@ -10,7 +10,7 @@ const MINUTE_IN_MS = 1000 * 60;
 const SECOND_IN_MS = 1000;
 
 // Em ms
-const birthday = new Date("May 2, 2022 00:00:00").getTime();
+const birthday = new Date("April 3, 2023 00:00:00").getTime();
 
 const countdownTimeout = setInterval(setCountdownTimer, 1000)
 
