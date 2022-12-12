@@ -85,8 +85,9 @@ body {
 
 .card-image img {
   margin-top: 20px;
-  width: 250px;
+  width: 200px;
   border-radius: 5px;
+  height: 250px;
 }
 
 @media screen and (max-width: 720px) {
@@ -124,6 +125,12 @@ body {
 
 
 @media screen and (max-width: 480px) {
+  .bg-container {
+    background: url(assets/person.PNG) no-repeat; 
+    background-size: cover;
+    background-position: center;
+  }
+  
   .card-countdown {
     padding: 10px;
   }
